@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 import ClientRouter from "./routes/ClientsRoutes.js"
 
+import path from "path"
+
 
 import cookieParser from "cookie-parser"
 import { notFound , errorHandler } from "./middleware/errorMiddleware.js";
