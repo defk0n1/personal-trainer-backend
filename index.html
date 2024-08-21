@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Form</title>
+</head>
+<body>
+    <h1>CRUD Form</h1>
+    <form id="crudForm">
+        <input type="hidden" id="itemId">
+        <label for="name">Full name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <br>
+        <label for="height">Height:</label>
+        <input type="number" id="height" required>
+        <br>
+        <br>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" required>
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <br>
+        <br>
+        <label for="level">Experience level:</label>
+        <input type="text" id="level" required>
+        <br>
+        <br>
+        <label for="Goal">Goal:</label>
+        <input type="text" id="goal" required>
+        <br>
+        <br>
+        <label for="active">Activity level:</label>
+        <input type="text" id="active" required>
+        <br>
+        <br>
+        <label for="numofMeals">Number of meals per day:</label>
+        <input type="number" id="numofMeals" required>
+        <br>
+        <br>
+        <label for="medicalCondition">Underlying medical conditions:</label>
+        <input type="text" id="medicalCondition" required>
+        <br>
+        <br>
+        <label for="foodtoAvoid">Food to avoid in diet:</label>
+        <input type="text" id="foodtoAvoid" required>
+        <br>
+        <br>
+        <label for="supplement">Are you willing to use supplements ?</label>
+        <input type="text" id="supplement" required>
+        <br>
+        <br>
+        <label for="comment">Feel free to add anything</label>
+        <input type="text" id="comment" required>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <ul id="itemsList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
