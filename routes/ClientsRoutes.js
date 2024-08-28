@@ -24,8 +24,8 @@ clientRouter.route('/profile').get(protect,clientsController.fetchClient).put(pr
 //WEIGHT LOGGING ROUTES
 
 clientRouter.get('/weights',protect ,isSubscribed,WeightController.getWeightLogs)
-clientRouter.post('/weights',protect , isSubscribed,WeightController.addWeightLog)
-clientRouter.patch('/weights',protect , isSubscribed,WeightController.resetWeights)
+clientRouter.post('/weights/:id',protect ,WeightController.addWeightLog)
+clientRouter.patch('/weights/:id',protect ,WeightController.resetWeights)
 
 //DIET ROUTES
 
