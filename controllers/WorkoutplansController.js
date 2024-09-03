@@ -5,7 +5,7 @@ import { ObjectId } from 'mongodb';
 
 // Create a new workout plan
 const createWorkoutPlan = asyncHandler(async (req, res) => {
-  const { userId, name, description, days } = req.body;
+  const { userId, name, description, days, vidId } = req.body;
 
   // Ensure the userId is provided
   if (!userId) {
@@ -16,7 +16,8 @@ const createWorkoutPlan = asyncHandler(async (req, res) => {
     name,
     description,
     days,
-    user: userId
+    user: userId,
+    vidId
   });
    
   const savedWorkoutPlan = await newWorkoutPlan.save();
