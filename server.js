@@ -17,10 +17,11 @@ connectDB();
 
 const app = express();
 
-app.use(cors({credentials: true, origin : 'https://personal-trainer-7mmf.onrender.com' 
+app.use(cors({credentials: true,   origin : 'https://personal-trainer-7mmf.onrender.com' 
 }));
     // {
-    //   origin : 'https://personal-trainer-7mmf.onrender.com' 
+   
+    //   origin : 'http://localhost:3000'
     // }
  
 app.use(express.json());
